@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fmc-ha-status-monitor"
+version = "0.1.0"
+description = ""
+authors = ["Siddhu Warrier <siwarrie@cisco.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+black = "^24.4.2"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+fmc-ha-status-monitor = "fmc_ha_status_monitor.main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
